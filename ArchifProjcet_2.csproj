@@ -1,0 +1,273 @@
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{84419E35-2348-49B2-936F-FA653794521A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ArchifProjcet_2</RootNamespace>
+    <AssemblyName>ArchifProjcet_2</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.BonusSkins.v25.1" />
+    <Reference Include="DevExpress.Data.Desktop.v25.1" />
+    <Reference Include="DevExpress.Data.v25.1" />
+    <Reference Include="DevExpress.Utils.v25.1" />
+    <Reference Include="DevExpress.Sparkline.v25.1.Core" />
+    <Reference Include="DevExpress.XtraBars.v25.1, Version=25.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v25.1" />
+    <Reference Include="DevExpress.Printing.v25.1.Core" />
+    <Reference Include="DevExpress.Drawing.v25.1" />
+    <Reference Include="DevExpress.XtraGrid.v25.1, Version=25.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v25.1, Version=25.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPrinting.v25.1, Version=25.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Addition pages\AddFill.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Addition pages\AddFill.Designer.cs">
+      <DependentUpon>AddFill.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Addition pages\Add_Update_Category.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Addition pages\Add_Update_Category.Designer.cs">
+      <DependentUpon>Add_Update_Category.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Addition pages\Add_Update_User.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Addition pages\Add_Update_User.Designer.cs">
+      <DependentUpon>Add_Update_User.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CURD_Sql\ConnectionStringDataBase.cs" />
+    <Compile Include="CURD_Sql\TbFilles.cs" />
+    <Compile Include="CURD_Sql\Tb_Categure.cs" />
+    <Compile Include="CURD_Sql\Tb_User.cs" />
+    <Compile Include="DAL\Tb_ArchivFill.cs" />
+    <Compile Include="DAL\Tb_TheFilles.cs" />
+    <Compile Include="DAL\TB_Categurs.cs" />
+    <Compile Include="DAL\Tb_Users.cs" />
+    <Compile Include="DAL\Tools.cs" />
+    <Compile Include="DBL\Tb_Archive.cs" />
+    <Compile Include="DBL\Tb_Categor.cs" />
+    <Compile Include="DBL\Tb_Users.cs" />
+    <Compile Include="Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main.Designer.cs">
+      <DependentUpon>Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Log_in_and_Regstar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Log_in_and_Regstar.Designer.cs">
+      <DependentUpon>Log_in_and_Regstar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainFace.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MainFace.Designer.cs">
+      <DependentUpon>MainFace.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SettingsUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SettingsUserControl.Designer.cs">
+      <DependentUpon>SettingsUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Table_and_Buttons_UserControl1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Table_and_Buttons_UserControl1.Designer.cs">
+      <DependentUpon>Table_and_Buttons_UserControl1.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Addition pages\AddFill.resx">
+      <DependentUpon>AddFill.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Addition pages\Add_Update_Category.resx">
+      <DependentUpon>Add_Update_Category.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Addition pages\Add_Update_User.resx">
+      <DependentUpon>Add_Update_User.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main.resx">
+      <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Log_in_and_Regstar.resx">
+      <DependentUpon>Log_in_and_Regstar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainFace.resx">
+      <DependentUpon>MainFace.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="SettingsUserControl.resx">
+      <DependentUpon>SettingsUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Table_and_Buttons_UserControl1.resx">
+      <DependentUpon>Table_and_Buttons_UserControl1.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="App.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file.png" />
+    <None Include="Resources\inbox.png" />
+    <None Include="Resources\info.png" />
+    <None Include="Resources\settings %281%29.png" />
+    <None Include="Resources\user %281%29.png" />
+    <None Include="Resources\category %281%29.png" />
+    <None Include="Resources\home-agreement %281%29.png" />
+    <None Include="Resources\home-agreement.png" />
+    <None Include="Resources\category-2-svgrepo-com %281%29.png" />
+    <None Include="Resources\home_32x32.png" />
+    <None Include="Resources\pivottableoptions.svg" />
+    <None Include="Resources\support.svg" />
+    <None Include="Resources\open.svg" />
+    <None Include="Resources\bo_user.svg" />
+    <None Include="Resources\bo_category.svg" />
+    <None Include="Resources\bo_address.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\update.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\trash.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\trash1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\printer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancel %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.8">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.8 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eye.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eye %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add-user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eye %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancel %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\self-service %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\self-service.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\self-service %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cursor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancel %282%291.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
